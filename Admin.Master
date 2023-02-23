@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Demo.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        .navbar
+        {
+            background: aqua;
+            background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+            background: linear-gradient(to right, #ffff1c, #00c3ff);
+        }
+        .button
+        {
+            background: #0052D4;
+            background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+            background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table align="center">
+                <tr style="width: 1200px; color: aqua; height: 160px">
+                    <td>
+                        <asp:Image ID="Image1" runat="server" BorderColor="YellowGreen" BorderWidth="3px" Height="160px" Width="1200px" ImageUrl="~/Images/Admin.jpg" />
+                    </td>
+                </tr>
+                <tr style="border-width: 8px; border-color: aqua; width: 1200px; color: aquamarine; height:60px" bgcolor="aqua">
+                    <td>
+                        <div class="navbar">
+                            <table align="center" cellpadding="10">
+                                <tr style="border-color: antiquewhite">
+                                    <td>
+                                        <asp:Button CssClass="button" ID="btnCategory" runat="server"
+                                            Text="Add Category" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="false" BorderColor="YellowGreen" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="btnAddProduct" runat="server"
+                                            Text="Add Product" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="false" BorderColor="YellowGreen" OnClick="btnAddProduct_Click" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="Button1" runat="server" Text="Add Product" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="false" BorderColor="YellowGreen" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="Button2" runat="server" Text="Add Product" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="false" BorderColor="YellowGreen" />
+                                    </td>
+                                     <td>
+                                        <asp:Button CssClass="button" ID="Button3" runat="server" Text="Logout" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="false" BorderColor="YellowGreen" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>
