@@ -38,7 +38,7 @@
                 <tr>
                     <td align="center">Qauntity
                         <asp:DropDownList ID="DropDownList1" runat="server">
-                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>1</asp:ListItem>
                             <asp:ListItem>2</asp:ListItem>
                             <asp:ListItem>3</asp:ListItem>
                             <asp:ListItem>4</asp:ListItem>
